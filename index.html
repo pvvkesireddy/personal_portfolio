@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Param</span><br>Welcome to my Portfolio!</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic02.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a graduate student at California State University Fullerton, majoring in Computer Science. With a passion for technology and a strong foundation in programming, I possess extensive knowledge of major programming languages and the ability to develop highly effective applications.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages & Frameworks</span><br>C/C++, Python, Java, HTML, CSS, JavaScript, React.js, Node.js, Django, Flask</li>
+                        <li><span>Notebooks, IDE & Version Control</span><br>Jupiter, Google Collab, Visual Studio Code, Atom, Git, GitHub</li>
+                        <li><span>Database, Cloud, Project Management & Other Tools</span><br>MySQL, MongoDB, AWS, Jira, Scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>May 2024</span><br>California State University, Fullerton - Master of Science, Computer Science - GPA: 3.88 / 4.0</li>
+                        <li><span>June 2022</span><br>Sreenidhi Institute of Science and Technology, Telangana, India - Bachelor of Technology - Electronics & Communications Engineering – GPA: 8.78 / 10.0</li>                                                                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------projects---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Discover Diary - MERN Full Stack Application</h2>
+                <p>Created a full stack React.js application with Node.js, Express.js & MongoDB (MERN) where users can share places visited with other users.</p>
+                <a href="https://github.com/pvvkesireddy?tab=repositories">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Titan Payment System</h2>
+                <p>Engineered a Python project operating Data Structures and Algorithms, optimizing user processes with detailed analytics, including card-specific fee calculation.</p>
+                <a href="https://github.com/pvvkesireddy?tab=repositories">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Automate Emotion Analysis of Textual Comments and Feedback</h2>
+                <p>Developed a machine learning model for automated emotion analysis in text across 6 primary emotions and achieved an accuracy of 90%.</p>
+                <a href="https://github.com/pvvkesireddy?tab=repositories">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Algorithm Efficiency Analyzer Tool</h2>
+                <p>Built a tool using React.js and Flask allowing users to input a list of numbers, select a sorting algorithm, and visualize efficiency through a GUI interface.</p>
+                <a href="https://github.com/pvvkesireddy?tab=repositories">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Safeguarding Online Spaces: A Machine Learning Approach to Cyberbullying Detection</h2>
+                <p>Built a Cyberbullying detection System to achieve an accuracy of 92% on a public social media dataset leveraging Machine Learning approach.</p>
+                <a href="https://github.com/pvvkesireddy?tab=repositories">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Iris Classification</h2>
+                <p>This project is about classifying iris flowers among three classes (setosa, versicolor, or virginica) from the measurements of sepals and petals using Decision Tree Classifier.</p>
+                <a href="https://github.com/pvvkesireddy?tab=repositories">Learn more</a>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- ----------experience------------ -->
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/cs.png">
+                <div class="layer">
+                    <h3>Teaching Associate: Department of Computer Science, CSUF (August 2023 - Present)</h3>
+                    <p>-> Prepared course materials and delivering lectures for subject CPSC 323 Compilers & Languages.</p>
+                    <p>-> Evaluated assignments, projects, and exams, providing tailored feedback resulting in a 15% increase in student performance.</p>
+                    <p>-> Held regular office hours for support, integrating technology for enhanced teaching and enlightenment.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/micro.png">
+                <div class="layer">
+                    <h3>Project Intern: Microchip Academic Program, SNIST Microchip Academy (April 2021 - May 2021)</h3>
+                    <p>-> Performed programming and debugging tasks for AVR micro-controllers and Arduino boards, resulting in a 20% improvement in code efficiency and reliability.</p>
+                    <p>-> Collaborated with a team of 3 to resolve technical challenges leveraging expertise in C++ to deliver high-quality solutions.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/bp.jpg">
+                <div class="layer">
+                    <h3>General Secretary: Bachpan Prayas (A Student run NGO, March 2021 - January 2021)</h3>
+                    <p>->Led 10+ initiatives to support underprivileged children in Hyderabad, focusing on eradicating illiteracy and promoting a happy childhood.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>pvvkesireddy@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pvvkesireddy/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/pvvkesireddy"><i class="fab fa-github"></i></a>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0wcqSfwYXbkJ55ZwsXAco1Bv2GyEIf8zHbJHnYW2VvSVLtw/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+<div>
+    <div class="copyright">
+        <p>Copyright © Param</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
